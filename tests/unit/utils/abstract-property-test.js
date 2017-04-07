@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import AbstractProperty from 'dummy/utils/abstract-property';
+import AbstractProperty from 'dummy/abstract-property';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | abstract property');
