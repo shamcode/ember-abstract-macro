@@ -4,6 +4,7 @@
 [![npm version](https://badge.fury.io/js/ember-abstract-macro.png)](http://badge.fury.io/js/ember-abstract-macro)
 [![Dependency Status](https://david-dm.org/shamcode/ember-abstract-macro.svg)](https://david-dm.org/shamcode/ember-abstract-macro)
 [![devDependency Status](https://david-dm.org/shamcode/ember-abstract-macro.svg)](https://david-dm.org/shamcode/ember-abstract-macro#info=devDependencies)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-abstract-macro.svg)](https://emberobserver.com/addons/ember-abstract-macro)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 Collection of Computed Property macro for make properties & methods as abstract
