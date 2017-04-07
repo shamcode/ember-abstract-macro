@@ -4,6 +4,7 @@
 [![npm version](https://badge.fury.io/js/ember-abstract-macro.png)](http://badge.fury.io/js/ember-abstract-macro)
 [![Dependency Status](https://david-dm.org/shamcode/ember-abstract-macro.svg)](https://david-dm.org/shamcode/ember-abstract-macro)
 [![devDependency Status](https://david-dm.org/shamcode/ember-abstract-macro.svg)](https://david-dm.org/shamcode/ember-abstract-macro#info=devDependencies)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-abstract-macro.svg)](https://emberobserver.com/addons/ember-abstract-macro)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 Collection of Computed Property macro for make properties & methods as abstract
@@ -11,7 +12,7 @@ Collection of Computed Property macro for make properties & methods as abstract
 ## Usage
 
 For methods:
-```
+```js
 import { AbstractMethod } from 'ember-abstract-macro';
 
 const ObjectWithAbstractMethod = Ember.Object.extend({
@@ -28,7 +29,7 @@ foo.mustBeOverridden(); // return 42
 ```
 
 For properties:
-```
+```js
 import { AbstractProperty } from 'ember-abstract-macro';
 
 const ObjectWithAbstractProperty = Ember.Object.extend({
@@ -46,7 +47,7 @@ foo.get('mustBeOverridden'); // return 42
 
 ## Installation
 
-```
+```bash
 ember install ember-abstract-macro
 ```
 
@@ -54,7 +55,7 @@ ember install ember-abstract-macro
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/shamcode/ember-abstract-macro.git`
 * `cd ember-abstract-macro`
 * `npm install`
 * `bower install`
