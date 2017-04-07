@@ -54,7 +54,7 @@ ember install ember-abstract-macro
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/shamcode/ember-abstract-macro.git`
 * `cd ember-abstract-macro`
 * `npm install`
 * `bower install`
