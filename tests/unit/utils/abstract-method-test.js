@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import AbstractMethod from 'ember-abstract-macro/abstract-method';
+import { AbstractMethod } from 'ember-abstract-macro';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | abstract method');
