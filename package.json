@@ -1,6 +1,6 @@
 {
   "name": "ember-abstract-macro",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Collection of Computed Property macro for make properties & methods as abstract",
   "keywords": [
     "ember-addon",
