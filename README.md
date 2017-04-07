@@ -11,7 +11,7 @@ Collection of Computed Property macro for make properties & methods as abstract
 ## Usage
 
 For methods:
-```
+```js
 import { AbstractMethod } from 'ember-abstract-macro';
 
 const ObjectWithAbstractMethod = Ember.Object.extend({
@@ -28,7 +28,7 @@ foo.mustBeOverridden(); // return 42
 ```
 
 For properties:
-```
+```js
 import { AbstractProperty } from 'ember-abstract-macro';
 
 const ObjectWithAbstractProperty = Ember.Object.extend({
@@ -46,7 +46,7 @@ foo.get('mustBeOverridden'); // return 42
 
 ## Installation
 
-```
+```bash
 ember install ember-abstract-macro
 ```
 
