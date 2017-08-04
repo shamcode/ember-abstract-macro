@@ -1,10 +1,7 @@
-import Ember from 'ember';
-
-const {
-  isEmpty,
-  computed,
-  assert
-} = Ember;
+import { isEmpty } from "@ember/utils";
+import { computed } from "@ember/object";
+import { assert } from "@ember/debug";
+import { decoratorWithKeyReflection } from 'ember-decorators/utils/decorator-macros';
 
 /**
  * Mark property as abstract (must be overridden)
@@ -19,3 +16,8 @@ export default function abstractProperty(module, message) {
     );
   });
 }
+
+/**
+ * Decorator for abstractProperty
+ */
+export const property = decoratorWithKeyReflection( abstractProperty );

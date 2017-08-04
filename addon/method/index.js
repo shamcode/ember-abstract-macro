@@ -1,9 +1,5 @@
-import Ember from 'ember';
-
-const {
-  isEmpty,
-  assert
-} = Ember;
+import { isEmpty } from "@ember/utils";
+import { assert } from "@ember/debug";
 
 /**
  * Mark method as abstract (must be overridden & implement)

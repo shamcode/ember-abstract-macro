@@ -1,5 +1,5 @@
-import AbstractMethod from './abstract-method';
-import AbstractProperty from './abstract-property';
+import AbstractMethod from "./method";
+import AbstractProperty from "./property";
 
 export {
   AbstractMethod,

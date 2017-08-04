@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import { AbstractProperty } from 'ember-abstract-macro';
+import AbstractProperty, { property as abstractProperty } from 'ember-abstract-macro/property';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | abstract property');
@@ -45,4 +45,32 @@ test('Custom message, assert catch', function(assert) {
     },
     'raise assertion with custom message'
   );
+});
+
+test('Decorator property, assert catch', function(assert) {
+  assert.expect(1);
+  assert.throws(
+    () => {
+      class ClassWithAbstractProperty extends Ember.Object {
+        @abstractProperty('my-module-name') mustBeOverridden() {}
+      }
+      const obj = ClassWithAbstractProperty.create();
+      obj.get('mustBeOverridden');
+    },
+    (err) => {
+      return 'Assertion Failed: Class my-module-name, property mustBeOverridden must be overridden' === err.message;
+    },
+    'raise assertion'
+  );
+});
+
+test('Decorator property with override', function(assert) {
+  class ObjectWithAbstractProperty extends Ember.Object {
+    @abstractProperty('my-module-name')
+    mustBeOverridden() {}
+  }
+  const obj = ObjectWithAbstractProperty.create({
+    mustBeOverridden: 'property overridden'
+  });
+  assert.equal(obj.get('mustBeOverridden'), 'property overridden');
 });
