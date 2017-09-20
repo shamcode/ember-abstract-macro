@@ -45,6 +45,26 @@ const foo = ObjectWithAbstractProperty.create({
 foo.get('mustBeOverridden'); // return 42
 ```
 
+As decorator:
+```js
+import { property as abstract } from 'ember-abstract-macro/property';
+
+class ClassWithAbstractProperty extends Ember.Object {
+  @abstract( 'my-module-name' ) mustBeOverridden() {}
+}
+
+const foo = ClassWithAbstractProperty.create();
+foo.get('mustBeOverridden'); // raise Assertion 'Class my-module-name, property mustBeOverridden must be overridden'
+
+class ObjectWithAbstractProperty extends Ember.Object {
+  @abstract('my-module-name') mustBeOverridden() {}
+}
+const foo = ObjectWithAbstractProperty.create({
+  mustBeOverridden: 42
+});
+foo.get('mustBeOverridden') // return 42
+```
+
 ## Installation
 
 ```bash
