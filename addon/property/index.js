@@ -1,7 +1,7 @@
 import { isEmpty } from "@ember/utils";
 import { computed } from "@ember/object";
 import { assert } from "@ember/debug";
-import { decoratorWithKeyReflection } from 'ember-decorators/utils/decorator-macros';
+import { decoratorWithKeyReflection } from '@ember-decorators/utils/decorator-macros';
 
 /**
  * Mark property as abstract (must be overridden)
