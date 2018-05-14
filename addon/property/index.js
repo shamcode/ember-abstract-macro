@@ -1,7 +1,7 @@
 import { isEmpty } from "@ember/utils";
 import { computed } from "@ember/object";
 import { assert } from "@ember/debug";
-import { decoratorWithKeyReflection } from '@ember-decorators/utils/decorator-macros';
+import { computedDecoratorWithParams } from '@ember-decorators/utils/computed';
 
 /**
  * Mark property as abstract (must be overridden)
@@ -20,4 +20,6 @@ export default function abstractProperty(module, message) {
 /**
  * Decorator for abstractProperty
  */
-export const property = decoratorWithKeyReflection( abstractProperty );
+export const property = computedDecoratorWithParams(function(target, key, desc, params) {
+  return abstractProperty(...params)
+});
